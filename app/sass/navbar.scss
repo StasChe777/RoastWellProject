@@ -1,0 +1,44 @@
+$dark-grey: #2f3542;
+$wild-watermelon: #ff4757;
+$salmon: #ff6b81;
+$white: #fff;
+.navbar {
+  margin-bottom: 0;
+  &-default {
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+    opacity: 0.9;
+    border-radius: 0;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  img {
+    width:40px;
+    filter: hue-rotate(315deg) saturate(1.9);
+
+  }
+   .navbar-nav li > a {
+    margin: 10px;
+  }
+  &-header {
+    font-size: 30px;
+  }
+  &-collapse {
+    .navbar-nav {
+      > li > a {
+      color: $white;
+      &:hover,
+      &:focus {
+        transition: 0.4s;
+        color: $wild-watermelon;
+      }
+    }
+  }
+}
+}
+
